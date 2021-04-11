@@ -5,10 +5,10 @@ $(() => {
   const dateArray = [];
   // let imgLink = null;
   $.ajax({
-      url:'https://kitsu.io/api/edge/anime?page[limit]=20&page[offset]=0&filter[categories]=horror'
+      url:'https://kitsu.io/api/edge/anime?page[limit]=20&page[offset]=50&filter[categories]=horror'
   }).then(
     (data)=>{
-      for ( i = 0; i < 12; i++) {
+      for ( i = 0; i < 18; i++) {
         const $imgUrl = $('<img>').attr('src', data.data[i].attributes.posterImage.tiny).attr('value',i).addClass('displayCover')
         // const $boxTitle = $('<div>').text(data.data[i].attributes.canonicalTitle).attr('value',i);
         // const $boxSynop = $('<div>').text(data.data[i].attributes.synopsis).attr('value',i);
@@ -41,13 +41,12 @@ $(() => {
         $('.displayCover').on('click', (event) => {
           $('#innerImg').empty()
           $('#textLayout').empty()
+          $('#title').empty()
+          $('#date').empty()
           $('#innerImg').append($('<img>').attr('src', imgArray[$(event.target).attr('value')]))
-          $('#textLayout').append($('<h1>').text(titleArray[$(event.target).attr('value')]))
-          $('#textLayout').append($('<h2>').text(synopArray[$(event.target).attr('value')]))
-          $('#textLayout').append($('<p>').text(dateArray[$(event.target).attr('value')]))
-
-
-
+          $('#title').append($('<h1>').text(titleArray[$(event.target).attr('value')]))
+          $('#textLayout').append($('<article>').text(synopArray[$(event.target).attr('value')]))
+          $('#date').append($('<li>').text(dateArray[$(event.target).attr('value')]))
       })
     }
   )
@@ -59,10 +58,10 @@ $(() => {
   const dateArray = [];
   // let imgLink = null;
   $.ajax({
-      url:'https://kitsu.io/api/edge/anime?page[limit]=20&page[offset]=10&filter[categories]=supernatural'
+      url:'https://kitsu.io/api/edge/anime?page[limit]=20&page[offset]=30&filter[categories]=Supernatural'
   }).then(
     (data)=>{
-      for ( i = 0; i < 12; i++) {
+      for ( i = 0; i < 18; i++) {
         const $imgUrl = $('<img>').attr('src', data.data[i].attributes.posterImage.tiny).attr('value',i).addClass('displayCover')
         // const $boxTitle = $('<div>').text(data.data[i].attributes.canonicalTitle).attr('value',i);
         // const $boxSynop = $('<div>').text(data.data[i].attributes.synopsis).attr('value',i);
@@ -95,10 +94,12 @@ $(() => {
         $('.superNRow').on('click', (event) => {
           $('#innerImg').empty()
           $('#textLayout').empty()
+          $('#title').empty()
+          $('#date').empty()
           $('#innerImg').append($('<img>').attr('src', imgArray[$(event.target).attr('value')]))
-          $('#textLayout').append($('<h1>').text(titleArray[$(event.target).attr('value')]))
-          $('#textLayout').append($('<h2>').text(synopArray[$(event.target).attr('value')]))
-          $('#textLayout').append($('<p>').text(dateArray[$(event.target).attr('value')]))
+          $('#title').append($('<h1>').text(titleArray[$(event.target).attr('value')]))
+          $('#textLayout').append($('<article>').text(synopArray[$(event.target).attr('value')]))
+          $('#date').append($('<li>').text(dateArray[$(event.target).attr('value')]))
       })
     }
   )
