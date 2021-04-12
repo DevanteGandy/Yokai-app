@@ -1,4 +1,7 @@
 # Yokai-app
+CHECK OUT YOKAI - https://yokaia-app.netlify.app/
+
+
 a simple content discovery for horror and supernatural anime.
 //
 I built this with an intent that
