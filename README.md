@@ -1,5 +1,5 @@
 # Yokai-app
-CHECK OUT YOKAI - https://yokaia-app.netlify.app/
+CHECK OUT YOKAI - https://yokai-app.netlify.app/
 
 
 a simple content discovery for horror and supernatural anime.
