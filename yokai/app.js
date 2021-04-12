@@ -5,7 +5,7 @@ $(() => {
   const dateArray = [];
   // let imgLink = null;
   $.ajax({
-      url:'https://kitsu.io/api/edge/anime?page[limit]=20&page[offset]=50&filter[categories]=horror'
+      url:'https://kitsu.io/api/edge/anime?page[limit]=20&page[offset]=62&filter[categories]=horror'
   }).then(
     (data)=>{
       for ( i = 0; i < 18; i++) {

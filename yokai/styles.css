@@ -1,5 +1,5 @@
 .top-nav {
-  background-color:  #e0e0eb;
+  background-color:  black;
   border-radius: 8px;
   position: absolute;
   top: 0;
@@ -9,7 +9,6 @@
   text-align: center;
   box-shadow: 0 0 25px 0 black;
   background-image: url('https://images.unsplash.com/photo-1601850494422-3cf14624b0b3?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTN8fGFuaW1lfGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1400&q=60');
-  background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
 }
@@ -31,14 +30,20 @@
 }
 
 body {
-  background-color:   #f0e6ff;
+  background-color:   black;
   padding: 10px;
   margin-top: 80px;
   text-align: left;
   background-image: url('https://images.unsplash.com/photo-1601850494422-3cf14624b0b3?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTN8fGFuaW1lfGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1400&q=60');
-  background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
+}
+.bodyContainer {
+
+}
+.displayCovers {
+  display: inline-block;
+
 }
 
 .displayCovers img {
@@ -140,7 +145,7 @@ margin: 10px;
   top: 46px;
 }
 #footer {
-  background-color:  #e0e0eb;
+  background-color:  black;
   border-radius: 8px;
   height: 80px;
   box-shadow: 0 0 25px 0 black;
